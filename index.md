@@ -14,12 +14,8 @@ about:
 works:
   - title: Personal website
     description: Using Deno, Lume, TailwindCSS, GitHub and Netifly
-  - title: Personal website
-    description: Using Deno, Lume, TailwindCSS, GitHub and Netifly
-  - title: Personal website
-    description: Using Deno, Lume, TailwindCSS, GitHub and Netifly
-  - title: Personal website
-    description: Using Deno, Lume, TailwindCSS, GitHub and Netifly
+  - title: External blog content
+    description: A dynamic blog content generator for templates using a js lib
 projects:
   - title: Identity Access and Management
     description: Using Django, KeyCloack, Sentry, UML, PostgreSQL, Grafana and Rancher
