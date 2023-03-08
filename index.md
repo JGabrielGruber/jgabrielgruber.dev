@@ -1,6 +1,7 @@
 ---
 layout: home.njk
-title: José Gabriel Gruber
+title: José Gabriel Gruber - Software Engineer from Brazil
+main_title: José Gabriel Gruber
 description:
   content: Software Engineer with a huge passion in software projects
 keywords:

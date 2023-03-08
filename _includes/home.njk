@@ -76,7 +76,7 @@ educations:
             <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20" id="nav-content">
                 <ul class="list-reset lg:flex justify-end flex-1 items-center">
                     <li class="mr-3">
-                        <a class="flex-1 block md:inline-block appearance-none bg-blue-500 text-white text-base font-semibold tracking-wider uppercase py-1 px-2 rounded shadow hover:bg-blue-400">Resume</a>
+                        <a class="flex-1 block md:inline-block appearance-none bg-blue-500 text-white text-base font-semibold tracking-wider uppercase py-1 px-2 rounded shadow hover:bg-blue-400" href="https://drive.google.com/file/d/1EqoOtzyQpuCUeoMd1uQOSMHnMZzJ20NN/view?usp=share_link" target="_blank">Resume</a>
                     </li>
                     {% for menu in menus %}
                         <li class="mr-3">
@@ -93,11 +93,13 @@ educations:
     <!--Container-->
     <div class="container w-full md:max-w-3xl mx-auto md:pt-20 " id="content">
 
+        <h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl text-center">{{ main_title }}</h1>
+
         <div class="w-full px-4 md:px-6 text-xl leading-normal snap-start scroll-mt-64 scroll-pb-96" id="about">
             <div class="container mx-auto flex flex-col md:flex-row items-center mb-12 mt-20 md:my-24">
                 <div class="flex flex-col w-full lg:w-1/2 justify-center items-start pt-4 md:pt-12 pb-6 px-6" itemscope itemtype="https://schema.org/Person">
                     <p class="uppercase tracking-loose" itemprop="jobTitle">{{ about.title }}</p>
-                    <h1 class="font-bold text-4xl my-2" itemprop="seeks">{{ about.phrase }}</h1>
+                    <h2 class="font-bold text-4xl my-2" itemprop="seeks">{{ about.phrase }}</h1>
                     <p class="leading-normal">{{ about.description }}</p>
                 </div>
                 <div class="w-full lg:w-1/2 lg:py-6 text-center px-6">
@@ -111,7 +113,7 @@ educations:
 
         <div class="w-full px-4 md:px-6 text-xl leading-normal snap-center">
             <div class="flex flex-col w-full justify-center items-start px-6 mb-4">
-                <h1 class="font-bold text-4xl my-4" id="working">What I'm working on</h1>
+                <h2 class="font-bold text-4xl my-4" id="working">What I'm working on</h1>
             </div>
             {{ comp.cards({items: works}) | safe }}
         </div>
@@ -121,7 +123,7 @@ educations:
 
         <div class="w-full px-4 md:px-6 text-xl leading-normal snap-center">
             <div class="flex flex-col w-full justify-center items-start px-6 mb-4">
-                <h1 class="font-bold text-4xl my-4" id="projects">Projects</h1>
+                <h2 class="font-bold text-4xl my-4" id="projects">Projects</h1>
             </div>
             {{ comp.cards({items: projects}) | safe }}
         </div>
@@ -131,11 +133,11 @@ educations:
 
         <div class="w-full px-4 md:px-6 text-xl leading-normal snap-center">
             <div class="flex flex-col w-full justify-center items-start px-6 mb-4">
-                <h1 class="font-bold text-4xl my-4" id="experiences">Experiences</h1>
+                <h2 class="font-bold text-4xl my-4" id="experiences">Experiences</h1>
                 {% for experience in experiences %}
-                    <h2 class="font-bold text-2xl">{{ experience.title }}</h2>
-                    <h3 class="text-xl">{{ experience.local }}</h3>
-                    <h4 class="text-base">{{ experience.period }}</h4>
+                    <h3 class="font-bold text-2xl">{{ experience.title }}</h2>
+                    <h4 class="text-xl">{{ experience.local }}</h3>
+                    <h5 class="text-base">{{ experience.period }}</h4>
                 {% endfor %}
             </div>
         </div>
@@ -145,11 +147,11 @@ educations:
 
         <div class="w-full px-4 md:px-6 text-xl leading-normal snap-center">
             <div class="flex flex-col w-full justify-center items-start px-6 mb-4">
-                <h1 class="font-bold text-4xl my-4" id="education">Education</h1>
+                <h2 class="font-bold text-4xl my-4" id="education">Education</h1>
                 {% for education in educations %}
-                    <h2 class="font-bold text-2xl">{{ education.title }}</h2>
-                    <h3 class="text-xl">{{ education.local }}</h3>
-                    <h4 class="text-base">{{ education.period }}</h4>
+                    <h3 class="font-bold text-2xl">{{ education.title }}</h2>
+                    <h4 class="text-xl">{{ education.local }}</h3>
+                    <h5 class="text-base">{{ education.period }}</h4>
                 {% endfor %}
             </div>
         </div>
