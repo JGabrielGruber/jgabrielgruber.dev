@@ -9,4 +9,6 @@ site.use(tailwindcss());
 site.use(postcss());
 site.use(attributes());
 
+site.copy("_assets", ".");
+
 export default site;

@@ -47,6 +47,10 @@ educations:
     <meta name="description" {{ description | attr | safe }} />
     <meta name="keywords" {{ keywords | attr | safe }} />
     <link rel="stylesheet" href="/styles.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
   </head>
 
   
@@ -58,7 +62,7 @@ educations:
 
         <div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
 
-            <div class="pl-4">
+            <div class="pl-4 flex flex-row">
                 <a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl" href="/">
                     jgabrielgruber<span class="text-blue-400">.dev</span>
                 </a>
@@ -91,7 +95,7 @@ educations:
     </nav>
 
     <!--Container-->
-    <div class="container w-full md:max-w-3xl mx-auto md:pt-20 " id="content">
+    <div class="container w-full md:max-w-3xl mx-auto pt-20" id="content">
 
         <h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl text-center">{{ main_title }}</h1>
 
