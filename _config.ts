@@ -5,7 +5,23 @@ import attributes from "lume/plugins/attributes.ts";
 
 const site = lume();
 
-site.use(tailwindcss());
+site.use(
+  tailwindcss({
+    options: {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: "#2ad4ff",
+              darker: "#21a9cc",
+            },
+            secondary: "#cccccc",
+          },
+        },
+      },
+    },
+  })
+);
 site.use(postcss());
 site.use(attributes());
 
