@@ -1,6 +1,10 @@
 ---
+lang: [en, pt-BR]
+id: index
 layout: home.njk
 title: José Gabriel Gruber - Software Engineer from Brazil
+title.pt-BR: Engenheiro de Software
+url.en: /
 main_title: José Gabriel Gruber
 description:
   content: Software Engineer with a huge passion in software projects
@@ -20,8 +24,10 @@ works:
 projects:
   - title: Identity Access and Management
     description: Using Django, KeyCloack, Sentry, UML, PostgreSQL, Grafana and Rancher
+    link: https://agriness.com/
   - title: Industrial Automation
     description: Using CLP, Python, Kafka, Redis, ReactJS, MongoDB, Flutter, HUG API, WebSocket and Cassandra
+    link: https://vielitech.com.br/
 experiences:
   - title: Software Developer
     local: Agriness, Farm Management Software
