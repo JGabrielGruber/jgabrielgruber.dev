@@ -51,6 +51,9 @@ const redirectBasedOnLanguage = async (request: any, next: any) => {
   }
 };
 
+var languages = ["en", "pt"];
+var defaultLanguage = "en";
+
 const site = lume({
   server: {
     middlewares: [
@@ -79,8 +82,6 @@ site.use(
 site.use(postcss());
 site.use(attributes());
 site.use(basePath()); // modify url
-var languages = ["en", "pt-BR"];
-var defaultLanguage = "en";
 site.use(multilanguage({
   extensions: [".njk", ".md"],
   languages: languages, // Available languages
